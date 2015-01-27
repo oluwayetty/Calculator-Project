@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title> Basic Calculator &reg</title>
+<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+
+<body>
+     <div id="Calculator">
+         <div id="display">
+              <input type="text"  id="textbox_full" class="input" colspan="2" readonly>
+              <input type="text"  id="textbox"  class="input" readonly>
+              <input type="button" value="AC" class="AC" onClick="reset();">
+                
+         </div>
+
+          <table class="table">
+            <tr>
+              <td><input type ="button" value="1" class="button" onClick="num(this)"></td>
+              <td><input type ="button" value="2" class="button" onClick="num(this)"></td>
+              <td><input type ="button" value="3" class="button" onClick="num(this)"></td>
+              <td><input type ="button" value="=" class="button" onClick="operator(this)"></td>
+            </tr>
+            <tr>
+              <td><input type ="button" value="4" class="button" onClick="num(this)"></td>
+              <td><input type ="button" value="5" class="button" onClick="num(this)"></td>
+              <td><input type ="button" value="6" class="button" onClick="num(this)"></td>
+              <td><input type ="button" value="." class="button" onClick="num(this)"></td>
+            </tr>
+            <tr>
+              <td><input type ="button" value="7" class="button" onClick="num(this)"></td>
+              <td><input type ="button" value="8" class="button" onClick="num(this)"></td>
+              <td><input type ="button" value="9" class="button" onClick="num(this)"></td>
+              <td><input type ="button" value="0" class="button" onClick="num(this)"></td>
+            </tr>
+            <tr>
+              <td><input type ="button" value="+" class="button" onClick="operator(this)"></td>
+              <td><input type ="button" value="-" class="button" onClick="operator(this)"></td>
+              <td><input type ="button" value="*" class="button" onClick="operator(this)"></td>
+              <td><input type ="button" value="/" class="button" onClick="operator(this)"></td>
+            </tr>
+          </table>
+      </div>
+    <script type ="text/javascript" src="script.js"></script>
+</body>
+</html>
